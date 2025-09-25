@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\CompletedActivitiesController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\NewsletterController;
@@ -19,6 +20,8 @@ Route::get('/articles/{slug}', [ArticleController::class, 'show'])->name('articl
 
 // Activities
 Route::get('/activities', [ActivityController::class, 'index'])->name('activities.index');
+// Completed activities (activités réalisées) - must be before slug route
+Route::get('/activities/completed', [CompletedActivitiesController::class, 'index'])->name('activities.completed');
 Route::get('/activities/{slug}', [ActivityController::class, 'show'])->name('activities.show');
 
 // Members

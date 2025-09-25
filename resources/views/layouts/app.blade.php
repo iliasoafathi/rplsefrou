@@ -218,6 +218,11 @@
                         <div class="absolute inset-0 bg-gold/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-yellow-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </a>
+                    <a href="{{ route('activities.completed') }}" class="nav-link group relative px-4 py-2 text-sm font-medium text-light hover:text-gold transition-all duration-300">
+                        <span class="relative z-10">Activités réalisées</span>
+                        <div class="absolute inset-0 bg-gold/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-yellow-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    </a>
                     <a href="{{ route('members.index') }}" class="nav-link group relative px-4 py-2 text-sm font-medium text-light hover:text-gold transition-all duration-300">
                         <span class="relative z-10">Membres</span>
                         <div class="absolute inset-0 bg-gold/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
@@ -290,6 +295,10 @@
                     <span class="relative z-10">Activités</span>
                     <div class="absolute inset-0 bg-gold/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                 </a>
+                <a href="{{ route('activities.completed') }}" class="mobile-nav-link group flex items-center px-4 py-3 text-base font-medium text-light hover:text-gold transition-all duration-300 rounded-lg hover:bg-gold/10">
+                    <span class="relative z-10">Activités réalisées</span>
+                    <div class="absolute inset-0 bg-gold/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                </a>
                 <a href="{{ route('members.index') }}" class="mobile-nav-link group flex items-center px-4 py-3 text-base font-medium text-light hover:text-gold transition-all duration-300 rounded-lg hover:bg-gold/10">
                     <span class="relative z-10">Membres</span>
                     <div class="absolute inset-0 bg-gold/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
@@ -358,6 +367,7 @@
                         <li><a href="{{ route('home') }}" class="text-light/80 hover:text-gold transition-colors duration-300">Accueil</a></li>
                         <li><a href="{{ route('articles.index') }}" class="text-light/80 hover:text-gold transition-colors duration-300">Articles</a></li>
                         <li><a href="{{ route('activities.index') }}" class="text-light/80 hover:text-gold transition-colors duration-300">Activités</a></li>
+                        <li><a href="{{ route('activities.completed') }}" class="text-light/80 hover:text-gold transition-colors duration-300">Activités réalisées</a></li>
                         <li><a href="{{ route('members.index') }}" class="text-light/80 hover:text-gold transition-colors duration-300">Membres</a></li>
                         <li><a href="{{ route('contact') }}" class="text-light/80 hover:text-gold transition-colors duration-300">Contact</a></li>
                     </ul>

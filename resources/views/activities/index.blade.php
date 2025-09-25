@@ -15,6 +15,11 @@
             <p class="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up">
                 Participez aux événements et activités organisés dans notre région
             </p>
+            <div class="flex justify-center gap-3">
+                <a href="{{ route('activities.completed') }}" class="inline-flex items-center bg-mint text-dark px-4 py-2 rounded-lg font-medium hover:bg-green-400 transition-all duration-300 transform hover:scale-105">
+                    Voir les activités réalisées
+                </a>
+            </div>
         </div>
     </div>
     <!-- Animated background elements -->
